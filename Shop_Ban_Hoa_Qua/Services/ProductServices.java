@@ -1,5 +1,6 @@
 package Services;
 
+import Models.Account;
 import Models.Category;
 import Models.Product;
 import Services.Interface.IProductServcies;
@@ -8,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ProductServices implements IProductServcies {
-    @Override
 
     public void PrintListProduct(ArrayList<Product> list,ArrayList<Category> categoryArrayList) {
         for(Product p : list) {
@@ -143,5 +143,8 @@ public class ProductServices implements IProductServcies {
             }
         }
     }
-}
 
+	@Override
+	public void PrintListProduct(ArrayList<Product> list, ArrayList<Category> categories, ArrayList<Account> accounts) {
+	}
+}

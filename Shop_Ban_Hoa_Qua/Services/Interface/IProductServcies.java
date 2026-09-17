@@ -8,4 +8,5 @@ import java.util.ArrayList;
 
 public interface IProductServcies {
     void PrintListProduct(ArrayList<Product> list, ArrayList<Category> categories, ArrayList<Account>accounts);
+
 }
